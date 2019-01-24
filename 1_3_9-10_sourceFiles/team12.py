@@ -13,9 +13,6 @@ strategy_description = 'Collude the first couple times unless betrayed. Once bet
 def move(my_history, their_history, my_score, their_score):
     if len(my_history) <= 1:
         return 'c'
-    elif len(my_history) == 5:
-        return 'b'
-        
     elif (their_history[-1]) == 'b':
         return 'b'
     else:
